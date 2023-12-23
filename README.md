@@ -36,8 +36,8 @@ Terraform follows the principle of immutability, where infrastructure changes ar
 
 By combining these features, Terraform provides a consistent and scalable way to manage infrastructure across different cloud providers and on-premises environments. Users can define, version, and automate their infrastructure, bringing benefits like repeatability, consistency, and collaboration to the process of managing complex IT environments.
 
-## Integrating Terraform With Vs Code
-Install terraform extension into your Virtual Studio code, this is done by clicking on the extension icon on your Vs code, type terraform on the search bar and chose the version you need and click install from the pull-down menu
+## Integrating Terraform With Visual Studio Code
+Install terraform extension into your Virtual Studio code, this is done by clicking on the extension icon on your Visual Studio Code, type terraform on the search bar and chose the version you need and click install from the pull-down menu
 
 ## Azure Provider
 
@@ -70,14 +70,14 @@ Provider Block:
 The provider block is used to configure a specific provider, in this case, "azurerm."
 features Block:
 
-The features block is nested within the azurerm provider block. It is currently empty (contains no configuration). This block is used to enable optional features for the provider. In this example, no specific features are enabled. however, in the code file main.tf you will find the the resources used for the optional feature
+The features block is nested within the azurerm provider block. It is currently empty (contains no configuration). This block is used to enable optional features for the provider. In this example, no specific features are enabled, however, in the code file main.tf you will find the resources used for the optional feature
 
 This Terraform configuration is setting up the Microsoft Azure provider, specifying the source and version of the provider, and configuring it with default settings. The configuration is ready to be expanded with additional resources and settings related to Microsoft Azure infrastructure.
 
 In this Project, the  main.tf file is a block of code that will create a resource group, storage account and a storage container in azure. you have to log into your azure account with  this code az login then follow with the below terraform commands
 
 
-1)  terraform init - This is used to initialize the working directory that contains the Terraform configuration files
+1)  terraform init - This is use to initialize the working directory that contains the Terraform configuration files
    
 2)  terraform plan - Here Terraform will create an execution plan. Here you can see what changes Terraform is going to make to your infrastructure based on the configuration file
 
@@ -89,6 +89,20 @@ below is picture of infrastructured created and deployed
 ![image](https://github.com/akpatiudo/infrastructure/assets/118566096/c250e153-2290-4be5-8ddc-5b73baab6189)
 
 ![image](https://github.com/akpatiudo/infrastructure/assets/118566096/927108b6-86d1-481e-965d-f054f90dfe3c)
+
+In my work *Automating Infrastructure Deployment on Azure Cloud With Terraform and Azure Pipeline*, I talked on backend code and I quote "there is a block of code in the main.tf files that houses the backend that will store your infastructure files. you need to create a storage accont and a container to enable you fill: storage_account_name, container_name, key and access_key". he picture below is a snippet of how a block of backend code looks like.
+
+![image](https://github.com/akpatiudo/infrastructure/assets/118566096/3d8b2b2c-0b26-42df-ad50-51195f6f8b51)
+
+## Conclution
+
+Discover the transformative partnership between Visual Studio Code and Terraform, revolutionizing Azure infrastructure management. Leverage versioning, automation, and declarative configurations for enhanced efficiency and collaboration in modern software development, ensuring consistency across environments."
+
+
+
+
+
+
 
 
 
